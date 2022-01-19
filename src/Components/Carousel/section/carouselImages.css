@@ -1,0 +1,132 @@
+.carouselImage {
+  width: clac(100% * 27);
+  position: relative;
+  margin-right: 20px;
+  display: inline;
+}
+
+.image {
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.carouselInformation {
+  position: absolute;
+  bottom: 34px;
+  width: 330px;
+  height: 146px;
+  border-radius: 4px;
+  background-color: #fff;
+  text-align: left;
+  left: 34px;
+}
+
+.carouselInfo {
+  margin: 25px 25px 20px 25px;
+}
+
+.carouselInfoTitle {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.carouselDivider {
+  border: 0;
+  height: 1px;
+  background: #f0f0f0;
+}
+
+.moveToDetail {
+  margin: 14px 0 0 25px;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 990px) {
+  .carouselImage {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carouselInformation {
+    margin-top: 10px;
+    position: relative;
+    max-width: 1060px;
+    width: 100%;
+    bottom: 0px;
+    height: 100px;
+    background-color: #fff;
+    text-align: center;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: block;
+  }
+
+  .carouselDivider {
+    display: none;
+  }
+
+  .moveToDetail {
+    margin: 0;
+  }
+
+  .carouselInfo {
+    margin: 0 0 10px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carouselInfoTitle {
+    text-align: center;
+  }
+
+  .image {
+    object-fit: cover;
+    height: 183px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .carouselImage {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carouselInformation {
+    margin-top: 10px;
+    position: relative;
+    max-width: 1060px;
+    width: 100%;
+    bottom: 0px;
+    height: 100px;
+    background-color: #fff;
+    text-align: center;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: block;
+  }
+
+  .carouselDivider {
+    display: none;
+  }
+
+  .moveToDetail {
+    margin: 0;
+  }
+
+  .carouselInfo {
+    margin: 0 0 10px 0;
+  }
+
+  .image {
+    object-fit: cover;
+    height: 183px;
+  }
+}
